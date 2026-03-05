@@ -56,6 +56,12 @@ h1 {
 	font-weight: 500;
 }
 
+.logo img {
+	display: block;
+	width: min(260px, 70vw);
+	height: auto;
+}
+
 h2,
 h3 {
 	font-weight: 500;
@@ -125,6 +131,20 @@ button {
 	gap: 1rem;
 }
 
+.gallery-grid {
+	column-count: 4;
+	column-gap: 1rem;
+}
+
+.gallery-item {
+	width: 100%;
+	display: block;
+	margin-bottom: 1rem;
+	border-radius: 10px;
+	border: 1px solid var(--line);
+	break-inside: avoid;
+}
+
 form {
 	display: grid;
 	gap: 0.6rem;
@@ -158,5 +178,15 @@ footer {
 
 	h1 {
 		font-size: 1.5rem;
+	}
+
+	.gallery-grid {
+		column-count: 2;
+	}
+}
+
+@media (max-width: 500px) {
+	.gallery-grid {
+		column-count: 1;
 	}
 }
