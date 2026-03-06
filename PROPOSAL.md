@@ -43,11 +43,11 @@ Key Action:
     - The site should feel clean, polished, and easy to navigate with plenty of white space (very very user-friendly). The layout should feel sophisticated and not overwhelming, while still highlighting visuals and important information incredibly clearly.
 
 **5. Inspiration Cites:**
-- https://allurebridals.com/ 
+- [https://allurebridals.com/] 
     - this site has a clean and elegant aesthetic that fits the bridal industry well; the layout feels luxurious but still simple and easy to browse, which is the type of experience that she wants for her website and her users.
-- https://www.pinterest.com/
+- [https://www.pinterest.com/]
     - it is visually focused and displays many many images while still feeling organized. I like how the site feels simple and not overwhelming to look at even withh a large amount of visual content on the screen all the time. 
-- https://reesesbookclub.com/ 
+- [https://reesesbookclub.com/] 
     - this site is incredibly user-friendly and easy to navigate. The layout is simple, clean, and clear, which makes it easy for visitors to move around the website without feeling overwhelmed. 
 
 
@@ -56,4 +56,4 @@ Key Action:
 - figuring out how to correclty link css stylesheets
 - figuring out the correct vibe for my client and making sure it meets the expectations that she wants
 - figuring out how to make the website interactive (if they will even work for the type of business the website is for)
-- .......
+- how to correctly put the live URL for my mini-project-01
