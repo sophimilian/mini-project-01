@@ -10,8 +10,7 @@
 
 
 ## Link to live site
-- Add your GitHub Pages URL here after deployment: https://yourusername.github.io/mini-project-01/
-
+- Add your GitHub Pages URL here after deployment: https://github.com/sophimilian/mini-project-01.git
 
 ## What you learned
 I DONT KNOW ABOUT ALL THIS BELOW!!!!!:
