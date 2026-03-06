@@ -10,7 +10,7 @@
 
 
 ## Link to live site
-- [https://github.com/sophimilian/mini-project-01.git] 
+- [https://sophimilian.github.io/mini-project-01/] 
 
 
 
