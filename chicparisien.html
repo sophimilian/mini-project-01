@@ -11,26 +11,31 @@
 </head>
 <body>
 	<header>
-		<div class="container topbar">
-			<h1 class="logo">
-				<a href="#home" aria-label="Go to home section">
-					<img src="images/logo.jpg.png" alt="Chic Parisien logo">
-				</a>
-			</h1>
-			<p class="tagline">Luxury Bridal & Professional Alterations</p>
-		</div>
-		<nav aria-label="Main navigation">
-			<div class="container nav-links">
-				<a href="#home">Home</a>
-				<a href="#bridal">Bridal Alterations</a>
-				<a href="#general">General Alterations</a>
-				<a href="#galleries">Galleries</a>
-				<a href="#pricing">Pricing</a>
-				<a href="#appointment">Appointment Request</a>
-				<a href="#contact">Contact</a>
-				<a href="#faq">FAQ</a>
-				<button id="theme-toggle" type="button" aria-label="Toggle dark mode">Dark Mode</button>
+		<div class="header-content">
+			<div class="logo-section">
+				<h1 class="logo">
+					<a href="#home" aria-label="Go to home section">
+						<img src="images/logo.jpg.png" alt="Chic Parisien logo">
+					</a>
+				</h1>
+				<p class="tagline">Luxury Bridal Boutique & Expert Alterations</p>
 			</div>
+			<button id="hamburger" class="hamburger" aria-label="Toggle navigation menu">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+		</div>
+		<nav id="nav-menu" class="nav-menu" aria-label="Main navigation">
+			<a href="#home">Home</a>
+			<a href="#bridal">Bridal Alterations</a>
+			<a href="#general">General Alterations</a>
+			<a href="#gallery">Gallery</a>
+			<a href="#pricing">Pricing</a>
+			<a href="#appointment">Appointment Request</a>
+			<a href="#contact">Contact</a>
+			<a href="#faq">FAQ</a>
+			<button id="theme-toggle" type="button" aria-label="Toggle dark mode">Dark Mode</button>
 		</nav>
 	</header>
 
@@ -45,7 +50,7 @@
 				<a class="button" href="#appointment">Request an Appointment</a>
 			</div>
 			<img
-				src="https://images.unsplash.com/photo-1520854221256-17451cc331bf?auto=format&fit=crop&w=900&q=80"
+				src="images/front picture.jpg"
 				alt="Bride in a white wedding gown standing in an elegant boutique"
 			>
 		</section>
@@ -53,21 +58,23 @@
 		<section id="bridal" class="container card">
 			<h2>Bridal Alterations</h2>
 			<p>
-				Our bridal process is focused on precision, comfort, and confidence. During your fitting, we review your gown,
-				discuss timeline needs, and tailor each detail so your dress feels perfect for your wedding day.
+				As our specialty, our bridal alterations process is focused on precision, comfort, and confidence. 
+				During your fitting, we review your gown, discuss timeline needs, and tailor each detail so your dress 
+				feels perfect for your wedding day. We serve brides who purchased with us and from boutiques worldwide.
 			</p>
 		</section>
 
 		<section id="general" class="container card">
 			<h2>General Alterations</h2>
 			<p>
-				In addition to bridal services, we provide expert tailoring for dresses, suits, formalwear, and everyday clothing.
-				Services are customized based on garment type and alteration complexity.
+				Beyond our bridal focus, we branch into professional tailoring for dresses, suits, formalwear, and everyday clothing. 
+				Our alterations services are highly customized based on garment type and requested work. We welcome all clients 
+				seeking quality tailoring and a polished fit.
 			</p>
 		</section>
 
-		<section id="galleries" class="container card">
-			<h2>Galleries</h2>
+		<section id="gallery" class="container card">
+			<h2>Gallery</h2>
 			<div class="gallery-grid">
 				<img class="gallery-item" src="images/gallery-01.jpg" alt="Bride wearing an off-the-shoulder lace wedding gown in a boutique fitting room">
 				<img class="gallery-item" src="images/gallery-02.jpg.jpg" alt="Bridal gown fitting and alterations">
@@ -156,9 +163,25 @@
 	</footer>
 
 	<script>
+		const hamburger = document.getElementById("hamburger");
+		const navMenu = document.getElementById("nav-menu");
+		const navLinks = navMenu.querySelectorAll("a");
 		const themeToggle = document.getElementById("theme-toggle");
 		const savedTheme = localStorage.getItem("theme");
 
+		// Hamburger menu toggle
+		hamburger.addEventListener("click", function () {
+			navMenu.classList.toggle("active");
+		});
+
+		// Close menu when a link is clicked
+		navLinks.forEach(link => {
+			link.addEventListener("click", function () {
+				navMenu.classList.remove("active");
+			});
+		});
+
+		// Theme toggle
 		if (savedTheme === "dark") {
 			document.body.setAttribute("data-theme", "dark");
 			themeToggle.textContent = "Light Mode";
